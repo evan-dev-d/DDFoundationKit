@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (DDAnimation)
 - (void)dd_addCAAnimation:(CAAnimation *)animation;
 - (void)dd_addCAAnimation:(CAAnimation *)animation key:(nullable NSString *)key delay:(CGFloat)delay;
+- (void)dd_startShakeAnimation;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIApplication (DDKit)
 + (UIWindowScene *)dd_currentWindowScene;
 + (UIWindow *)dd_keyWindow;
++ (UIViewController *)dd_topViewController;
 @end
 
 @interface UIApplication (DDOrientation)

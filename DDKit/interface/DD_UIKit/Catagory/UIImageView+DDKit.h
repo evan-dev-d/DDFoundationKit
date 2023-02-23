@@ -11,8 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (DDKit)
 
-+ (UIImageView *)createFitSizeImageName:(NSString *)imageName fitWidth:(CGFloat)fitWidth;
-- (void )fitSizeWithWidth:(CGFloat)fitWidth;
++ (UIImageView *)dd_createFitSizeImageName:(NSString *)imageName fitWidth:(CGFloat)fitWidth;
+- (void )dd_sizeToFitWidth:(CGFloat)fitWidth;
+- (void)dd_sizeToFit;
 
 @end
 

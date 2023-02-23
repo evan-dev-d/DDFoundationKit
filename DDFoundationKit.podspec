@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'DDFoundationKit'
-  s.version      = '1.1.0'
+  s.version      = '1.2.0'
   s.summary      = "DDFoundationKit"
   s.homepage     = 'https://github.com/evan-dev-d/DDFoundationKit.git'
   s.author       = { 'evan' => '448765508@qq.com' }

@@ -30,7 +30,7 @@ typedef NS_ENUM(int32_t, DDTransitionAnimationType) {
 - (void)setupLeftNavigationItem:(SEL)selector imageName:(NSString *)imageName;
 - (void)setupRightNavigationItem:(SEL)selector imageName:(NSString *)imageName;
 
-- (void)setupDismissAction;
+- (void)dd_setupDismissAction;
 
 - (UIViewController *)dd_showClass:(Class)aClass;
 - (UIViewController *)dd_showClass:(Class)aClass animation:(BOOL)animation;
@@ -43,6 +43,12 @@ typedef NS_ENUM(int32_t, DDTransitionAnimationType) {
 - (void)dd_dismiss;
 - (void)dd_dismissWithAnimation:(BOOL)animation;
 - (void)dd_dismissWithAnimation:(BOOL)animation updateOrientations:(BOOL)updateOrientations;
+
+
+- (UIViewController *)dd_presentClass:(Class)aClass;
+- (UIViewController *)dd_presentClass:(Class)aClass animation:(BOOL)animation updateOrientations:(BOOL)updateOrientations completion:(void (^ __nullable)(void))completion;
+- (void)dd_presentInViewController:(UIViewController *)parentViewController;
+- (void)dd_presentInViewController:(UIViewController *)parentViewController animation:(BOOL)animation updateOrientations:(BOOL)updateOrientations completion:(void (^ __nullable)(void))completion;
 
 @end
 

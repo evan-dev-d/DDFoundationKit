@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString * const kNotificationSoundSourceaActiveChanged; ///< 音源是否active发生变化
+
 @interface DDPHASEAudioItem : NSObject
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) NSString *titleText;
@@ -19,12 +21,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *resourceName;
 @property (nonatomic, strong) NSString *resourceType;
 
-@property (nonatomic, strong, nullable) DDPHASESource *source;
 @property (nonatomic, assign) BOOL actived;
+
+@property (nonatomic, assign, readonly) CGFloat transformX;
+@property (nonatomic, assign, readonly) CGFloat transformZ;
+@property (nonatomic, strong, readonly) NSString *debugDesc;
+
 
 - (instancetype)initWithInfo:(NSDictionary *)info;
 
 - (void)clear;
+
+- (void)updateTransformX:(CGFloat)x z:(CGFloat)z;
+- (void)updateSource:(nullable id)source;
 
 @end
 
