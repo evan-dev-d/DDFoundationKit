@@ -1,18 +1,17 @@
 //
-//  DDPHASEAudioItem.h
+//  DDSpatialAudioItem.h
 //  DDKit
 //
 //  Created by Evan on 2022/10/2.
 //
 
 #import <Foundation/Foundation.h>
-#import "DDPHASESource.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 extern NSString * const kNotificationSoundSourceaActiveChanged; ///< 音源是否active发生变化
 
-@interface DDPHASEAudioItem : NSObject
+@interface DDSpatialAudioItem : NSObject
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) NSString *titleText;
 @property (nonatomic, assign) CGFloat x;
@@ -37,7 +36,7 @@ extern NSString * const kNotificationSoundSourceaActiveChanged; ///< 音源是�
 
 @end
 
-@interface DDPHASEConfig : NSObject
+@interface DDSpatialConfig : NSObject
 
 @property (nonatomic, assign, readonly) CGFloat displayWidth;
 @property (nonatomic, assign, readonly) CGFloat displayLimitWidth;

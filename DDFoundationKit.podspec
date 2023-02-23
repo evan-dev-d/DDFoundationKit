@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'DDFoundationKit'
-  s.version      = '1.2.0'
+  s.version      = '1.3.0'
   s.summary      = "DDFoundationKit"
   s.homepage     = 'https://github.com/evan-dev-d/DDFoundationKit.git'
   s.author       = { 'evan' => '448765508@qq.com' }
@@ -30,11 +30,11 @@ Pod::Spec.new do |s|
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/DDFoundationKit/DDKit_Localize/interface"', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/DDFoundationKit/DDKit_Localize"'}
   end
 
-  s.subspec 'DDKit_PHASE' do |ss|
-    ss.source_files         = 'DDKit_PHASE/interface/**/*.h'
-    ss.preserve_paths       = 'DDKit_PHASE/DDKit_PHASE.xcframework'
-    ss.vendored_framework   = 'DDKit_PHASE/DDKit_PHASE.xcframework'
-    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/DDFoundationKit/DDKit_PHASE/interface"', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/DDFoundationKit/DDKit_PHASE"'}
+  s.subspec 'DDKit_Spatial' do |ss|
+    ss.source_files         = 'DDKit_Spatial/interface/**/*.h'
+    ss.preserve_paths       = 'DDKit_Spatial/DDKit_Spatial.xcframework'
+    ss.vendored_framework   = 'DDKit_Spatial/DDKit_Spatial.xcframework'
+    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/DDFoundationKit/DDKit_Spatial/interface"', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/DDFoundationKit/DDKit_Spatial"'}
   end
 
   s.default_subspec = 'DDKit'
