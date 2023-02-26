@@ -33,8 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 //打开后台播放
 + (void)setupAudioPlayBack;
 
-//触感反馈
 + (void)touchFeedback;
+
++ (void)touchFeedbackSoft;
 
 @end
 

@@ -15,8 +15,8 @@ typedef void (^DDButtonActionTouchUpInside) (void);
 
 @property (nonatomic, assign) BOOL enableTouchSacleAnimation; //打开点击按钮缩放动画
 
-//打开触感反馈，style 触感反馈类型
-- (void)enable:(BOOL)enable impactFeedbackStyle:(UIImpactFeedbackStyle)style;
+- (void)enableTouchFeedback;
+- (void)enableTouchFeedbackSoft;
 
 @end
 
